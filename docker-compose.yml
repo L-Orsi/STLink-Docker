@@ -5,6 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     image: lorsi/stmflasher:latest
-    volumes:
-      - /dev:/dev
+    devices:
+      - "/dev:/dev"
+    privileged: true
 
