@@ -1,0 +1,10 @@
+version: "3.3"
+services:
+  stmflasher:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: lorsi/stmflasher:latest
+    volumes:
+      - /dev:/dev
+
